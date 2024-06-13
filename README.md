@@ -244,7 +244,7 @@ IoT 개발자 TCP/IP 학습 리포지토리
             - 연결 요청의 접수 = 클라이언트의 연결요청 정보가 서버의 연결요청 대기 큐에 등록된 상황
         
 
-    ![TCP기반 서버,클라이언트의 함수 호출 관계](https://raw.githubusercontent.com/som7199/TCP-IP-2024/main/images/t0001.png)
+    ![TCP기반 서버,클라이언트의 함수 호출 관계](https://raw.githubusercontent.com/c9yu/basic-TCP-IP-2024/main/imgs/img001.png)
 
 - echo_server.c / echo_client.c 팀별로 확인해보기
     - ipTIME 관리자 > NAT/라우터 관리 > 포트포워드 설정
