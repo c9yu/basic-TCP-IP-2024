@@ -594,3 +594,24 @@ IoT 개발자 TCP/IP 학습 리포지토리
     - 키르히호프
         - 전류 법칙 (KCL) : 특정 노드 혹은 닫힌 영역에 들어오는 전류의 대수적 합은 0이다.
         - 전압 법칙 (KVL) : 닫힌 경로 혹은 루프에서 모든 전압의 대수적 합은 0이다.
+
+    - GPIO 설정함수
+        - GPIO.setmode(GPIO.BOARD) - wpi
+        - GPIO.setmode(GPIO.BCM) - BCM
+        - GPIO.setup(channel, GPIO.mode)
+        - -channel: 핀번호, mode: IN/OUT
+        - GPIO.cleanup()
+    - GPIO 출력함수
+        - GPIO.output(channel, state)
+        - -channel: 핀번호, state: HIGH/LOW or 1/0 or True/False
+    - GPIO 입력함수
+        - GPIO.input(channel)
+        - -channel: 핀번호, 반환값: H/L or 1/0 or T/F
+    - 시간지연 함수
+        - time.sleep(secs)
+
+
+    ![입력이VCC에연결된경우]:https://raw.githubusercontent.com/c9yu/basic-TCP-IP-2024/main/imgs/img002.jpg
+
+
+    ![입력이GND에연결된경우]:https://raw.githubusercontent.com/c9yu/basic-TCP-IP-2024/main/imgs/img003.jpg
