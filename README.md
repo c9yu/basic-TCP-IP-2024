@@ -610,8 +610,14 @@ IoT 개발자 TCP/IP 학습 리포지토리
     - 시간지연 함수
         - time.sleep(secs)
 
-
+    - 풀업 저항
+        - input에 1이 들어간다
+            - 스위치를 눌렀을 때 0이 된다.
     ![입력이VCC에연결된경우]:https://raw.githubusercontent.com/c9yu/basic-TCP-IP-2024/main/imgs/img002.jpg
 
 
+    - 풀다운 저항
+        - input에 0이 들어간다
+            - 스위치를 눌렀을 때 1이 된다.
     ![입력이GND에연결된경우]:https://raw.githubusercontent.com/c9yu/basic-TCP-IP-2024/main/imgs/img003.jpg
+
