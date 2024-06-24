@@ -625,3 +625,21 @@ IoT 개발자 TCP/IP 학습 리포지토리
 
 
     - interrupt
+
+## 2일차 (2024-06-20)
+- 가상환경 만들기
+    - 파이썬 버전 확인 : python -V
+    - 가상환경 만들기 : python -m venv env
+    - 가상환경 실행하기 : source ./env/bin/activate
+    - 가상환경 종료하기 : deactivate
+
+- 가상환경에서 RPi를 못찾는 경우
+    - 다운로드 해줘야 함
+        - pip install RPi.GPIO
+
+- 적외선 센서 동작이 잘 안되는 경우
+    - 추가 프로그램을 다운로드 해줘야한다.
+        - 1. sudo git clone https://github.com/WiringPi/WiringPi
+        - 2. sudo ./build
+        - 3. gpio readall
+            - led가 계속 켜진다면 led를 연결해둔 핀에 1이 디폴트값으로 들어가 있어서 그런 것이다.
