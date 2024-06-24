@@ -625,3 +625,65 @@ IoT 개발자 TCP/IP 학습 리포지토리
 
 
     - interrupt
+
+## 2일차 (2024-06-20)
+- 가상환경 만들기
+    - 파이썬 버전 확인 : python -V
+    - 가상환경 만들기 : python -m venv env
+    - 가상환경 실행하기 : source ./env/bin/activate
+    - 가상환경 종료하기 : deactivate
+
+- 가상환경을 사용하는 이유
+    - 문제가 생기는 경우 가상환경 자체를 삭제하여 피해를 막을 수 있기 때문
+
+- 가상환경에서 RPi를 못찾는 경우
+    - 다운로드 해줘야 함
+        - pip install RPi.GPIO
+
+- 적외선 센서 동작이 잘 안되는 경우
+    - 추가 프로그램을 다운로드 해줘야한다.
+        - 1. sudo git clone https://github.com/WiringPi/WiringPi
+        - 2. sudo ./build
+        - 3. gpio readall
+            - led가 계속 켜진다면 led를 연결해둔 핀에 1이 디폴트값으로 들어가 있어서 그런 것이다.
+
+
+## 3일차 (2024-06-24)
+
+
+- 웹서버 만들기
+    - flask (가상환경에서 진행)
+        - pip install flask
+            - python flask01.py
+                - 두번째 IP는 라즈베리 파이 내부의 인터넷에서 접속하는 경우
+                - 세번째 IP는 기존 윈도우의 인터넷에서 접속하는 경우
+        
+    - 옵션이 추가된 가상환경 만들기
+        - python -m venv --system-site-packages env
+        - 이 경우 pip list를 통해 확인해보면 다양한 파일들이 가상환경 생성과 동시에 설치되어 있다.
+            - 앞서 직접 설치해줬던 flask도 마찬가지
+
+```C
+from flask import Flask
+
+app = Flask(__name__)  # name 이름을 통한 flask 객체 생성
+
+@app.route("/") # 라우팅을 위한 함수 등록
+def hello():
+  return "Hello World" 
+
+if __name__ == "__main__": # 터미널에서 직접 실행시켜야 실행파일의 이름이 main으로 바뀐다.
+  app.run(host="0.0.0.0", port="10200", debug=True) # 실행을 위한 명령문으로 보면된다.
+  # port = ~~~ : port번호를 지정 가능
+  # debug = True : 디버깅을 가능하도록 함
+```
+
+- 정적 라우팅
+    - flask 내부에 함수를 구현한다.
+    - 서버를 열고 접속
+    - 주소창 뒤에 함수를 입력 ex. 192.168.5.3:10200/age와 같이 입력시
+    - 작성해둔 함수의 리턴값이 출력
+
+- URL 접속을 통한 라즈베리 파이 동작
+    - 함수를 활용
+
