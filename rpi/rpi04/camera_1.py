@@ -1,7 +1,7 @@
 from gpiozero import Button
 import time
 
-swPin = Button(14)
+swPin = Button(26)
 
 oldSw = 0
 newSw = 0
