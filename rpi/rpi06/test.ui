@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>446</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_r">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>10</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LED:R</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_g">
+    <property name="geometry">
+     <rect>
+      <x>118</x>
+      <y>10</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LED:G</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_b">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LED:B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_ultra">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>70</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ultra</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_off">
+    <property name="geometry">
+     <rect>
+      <x>341</x>
+      <y>10</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OFF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_mel">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>130</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Melody</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="distance">
+    <property name="geometry">
+     <rect>
+      <x>114</x>
+      <y>65</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_count">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>190</y>
+      <width>99</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Count</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>130</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'PibotoLt'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;You can play using numbers 1 to 8 on the keyboard.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>86</y>
+      <width>68</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cm</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>446</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_g</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn_g_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>170</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_b</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn_b_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>282</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_r</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn_r_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_off</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn_off_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>395</x>
+     <y>59</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>btn_mel_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>67</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>btn_r_func()</slot>
+  <slot>btn_g_func()</slot>
+  <slot>btn_b_func()</slot>
+  <slot>btn_off_func()</slot>
+  <slot>btn_ultra()</slot>
+  <slot>btn_mel_func()</slot>
+  <slot>btn_count_func()</slot>
+ </slots>
+</ui>
