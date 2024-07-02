@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>446</width>
-    <height>288</height>
+    <width>590</width>
+    <height>328</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="btn_r">
     <property name="geometry">
      <rect>
-      <x>6</x>
-      <y>10</y>
+      <x>10</x>
+      <y>120</y>
       <width>99</width>
       <height>30</height>
      </rect>
@@ -30,8 +30,8 @@
    <widget class="QPushButton" name="btn_g">
     <property name="geometry">
      <rect>
-      <x>118</x>
-      <y>10</y>
+      <x>10</x>
+      <y>160</y>
       <width>99</width>
       <height>30</height>
      </rect>
@@ -43,8 +43,8 @@
    <widget class="QPushButton" name="btn_b">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>10</y>
+      <x>10</x>
+      <y>200</y>
       <width>99</width>
       <height>30</height>
      </rect>
@@ -56,8 +56,8 @@
    <widget class="QPushButton" name="btn_ultra">
     <property name="geometry">
      <rect>
-      <x>6</x>
-      <y>70</y>
+      <x>147</x>
+      <y>120</y>
       <width>99</width>
       <height>30</height>
      </rect>
@@ -69,8 +69,8 @@
    <widget class="QPushButton" name="btn_off">
     <property name="geometry">
      <rect>
-      <x>341</x>
-      <y>10</y>
+      <x>10</x>
+      <y>240</y>
       <width>99</width>
       <height>30</height>
      </rect>
@@ -82,8 +82,8 @@
    <widget class="QPushButton" name="btn_mel">
     <property name="geometry">
      <rect>
-      <x>6</x>
-      <y>130</y>
+      <x>419</x>
+      <y>119</y>
       <width>99</width>
       <height>30</height>
      </rect>
@@ -95,8 +95,8 @@
    <widget class="QLCDNumber" name="distance">
     <property name="geometry">
      <rect>
-      <x>114</x>
-      <y>65</y>
+      <x>147</x>
+      <y>159</y>
       <width>101</width>
       <height>41</height>
      </rect>
@@ -105,8 +105,8 @@
    <widget class="QPushButton" name="btn_count">
     <property name="geometry">
      <rect>
-      <x>7</x>
-      <y>190</y>
+      <x>287</x>
+      <y>119</y>
       <width>99</width>
       <height>30</height>
      </rect>
@@ -118,10 +118,10 @@
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>130</y>
-      <width>321</width>
-      <height>31</height>
+      <x>419</x>
+      <y>160</y>
+      <width>161</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="html">
@@ -129,20 +129,98 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'PibotoLt'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;You can play using numbers 1 to 8 on the keyboard.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;You can play &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;using numbers &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;1 to 8 on the keyboard.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>86</y>
-      <width>68</width>
+      <x>253</x>
+      <y>180</y>
+      <width>31</width>
       <height>22</height>
      </rect>
     </property>
     <property name="text">
      <string>cm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>137</x>
+      <y>10</y>
+      <width>111</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>17239.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>291</x>
+      <y>17</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>count.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>111</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>light.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>424</x>
+      <y>19</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>melody.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -151,7 +229,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>446</width>
+     <width>590</width>
      <height>28</height>
     </rect>
    </property>
